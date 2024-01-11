@@ -1,0 +1,89 @@
+/*
+TAG-Styles
+*/
+* {
+  font-size: 12px;
+}
+p {
+  font-size: 2em;
+}
+h2 {
+  font-size: 3.5em;
+}
+/*
+CLASS-Styles
+*/
+.hero {
+  position: relative;
+}
+.hero-content {
+  position: absolute;
+  top: 70%;
+  left: 40%;
+}
+.button-outlined {
+  padding: 1em 2em;
+  font-size: 1.3em;
+  border: 0.2em solid blue;
+  background-color: transparent;
+  border-radius: 0.7em;
+  color: blue;
+}
+.element {
+  width: 40%;
+}
+.headline-big {
+}
+.margin-top-bottom-standard {
+  /*margin: 24pt;
+  margin: 24pt 24pt;*/
+  margin: 2em 2em 4em 4em;
+}
+.two-element-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  gap: 2em 2em;
+  grid-template-areas:
+    'img heading'
+    'img txt';
+}
+.footer-img {
+  grid-area: img;
+  max-width: 100%;
+}
+.footer-heading {
+  grid-area: heading;
+  align-self: center;
+}
+.footer-text {
+  grid-area: txt;
+}
+/*
+ID-Styles
+*/
+#button-rounded {
+  font-size: 1.3em;
+  border: 0.2em solid blue;
+  background-color: blue;
+  border-radius: 50%;
+  color: white;
+  height: 5em;
+  width: 5em;
+}
+#button-filled {
+}
+#img-header {
+}
+#img-footer {
+  height: 18em;
+  width: 32em;
+  object-fit: cover;
+  object-position: 85% 100%;
+}

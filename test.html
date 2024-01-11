@@ -3,21 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./test.css" />
     <title>Example Page</title>
   </head>
   <body>
-    <header>
+    <header class="hero">
       <img
         src="https://www.mannheim.dhbw.de/fileadmin/user_upload/Bilder/Slider-Startseite/Slider-duales-Studium-Slogan-Studierende-graue-Wand-DHBW-Mannheim.jpg" />
-      <button>PLAY</button>
-      <h1>Seitenüberschrift im Header</h1>
-      <button>Button</button>
+      <div class="hero-content">
+        <button>PLAY</button>
+        <h1>Seitenüberschrift im Header</h1>
+        <button>Button</button>
+      </div>
     </header>
     <main>
       <h2>Überschrift Abschnitt</h2>
-      <section>
-        <div>
-          <h3>Überschrift Content</h3>
+      <section class="two-element-row">
+        <div class="element">
+          <h3>Überschrift Content 1</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
             quaerat laudantium minus commodi repudiandae officiis culpa earum
@@ -26,8 +29,8 @@
           </p>
           <button>Button</button>
         </div>
-        <div>
-          <h3>Überschrift Content</h3>
+        <div class="element">
+          <h3>Überschrift Content 2</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
             quaerat laudantium minus commodi repudiandae officiis culpa earum
@@ -36,8 +39,8 @@
           </p>
           <button>Button</button>
         </div>
-        <div>
-          <h3>Überschrift Content</h3>
+        <div class="element">
+          <h3>Überschrift Content 3</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
             quaerat laudantium minus commodi repudiandae officiis culpa earum
@@ -46,18 +49,8 @@
           </p>
           <button>Button</button>
         </div>
-        <div>
-          <h3>Überschrift Content</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
-            quaerat laudantium minus commodi repudiandae officiis culpa earum
-            corporis? Obcaecati ipsum explicabo inventore enim excepturi
-            sapiente, at veritatis ipsam dolores ex.
-          </p>
-          <button>Button</button>
-        </div>
-        <div>
-          <h3>Überschrift Content</h3>
+        <div class="element">
+          <h3>Überschrift Content 4</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
             quaerat laudantium minus commodi repudiandae officiis culpa earum
@@ -68,11 +61,12 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="grid">
       <img
+        class="footer-img"
         src="https://www.mannheim.dhbw.de/fileadmin/user_upload/Bilder/Slider-Startseite/Slider-duales-Studium-Slogan-Studierende-graue-Wand-DHBW-Mannheim.jpg" />
-      <h2>Überschrift Footer</h2>
-      <p>
+      <h2 class="footer-heading">Überschrift Footer</h2>
+      <p class="footer-text">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
         debitis blanditiis explicabo corporis impedit quis deleniti ab! Libero
         esse illum veniam aperiam similique suscipit dolores, necessitatibus
