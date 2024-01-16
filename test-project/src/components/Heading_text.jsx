@@ -1,13 +1,14 @@
-const Heading_text = () => {
+import './Heading_text.css';
+const Heading_text = ({ headline, text }) => {
+  const style = {
+    fontSize: '1em',
+    color: '#333',
+  };
   return (
-    <>
-      <h3>Heading</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat minima
-        animi cumque facere sequi est expedita soluta dolor architecto quaerat
-        molestias, dolorum aperiam et at veniam maxime adipisci perferendis aut.
-      </p>
-    </>
+    <div className='container'>
+      <h3 className='heading'>{headline}</h3>
+      <p style={style}>{text}</p>
+    </div>
   );
 };
 
