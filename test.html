@@ -73,5 +73,24 @@
         aspernatur repellendus ea numquam!
       </p>
     </footer>
+    <script>
+      const elements = document.getElementsByClassName('element');
+      const content = document.createTextNode('button');
+      const btn = document.createElement('button');
+      btn.appendChild(content);
+      btn.classList.add('button-rounded');
+      btn.id = '1';
+      btn.addEventListener('click', (event) => {
+        event.srcElement.innerText = 'o';
+        console.log(document.getElementsByTagName('button'));
+        const classList = btn.classList;
+        if (classList.contains('button-rounded')) {
+          btn.classList.remove('button-rounded');
+        } else {
+          btn.classList.add('button-rounded');
+        }
+      });
+      elements[0].appendChild(btn);
+    </script>
   </body>
 </html>

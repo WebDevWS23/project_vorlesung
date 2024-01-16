@@ -1,0 +1,8 @@
+#base-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 30em;
+  width: 30em;
+  grid-gap: 5em;
+}

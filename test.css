@@ -68,7 +68,7 @@ CLASS-Styles
 /*
 ID-Styles
 */
-#button-rounded {
+.button-rounded {
   font-size: 1.3em;
   border: 0.2em solid blue;
   background-color: blue;

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./tictactoe.css" />
+  </head>
+  <body>
+    <main id="base-grid"></main>
+    <script>
+      const main = document.getElementById('base-grid');
+      let counter = 0;
+      for (let i = 0; i < 9; i++) {
+        const btn = document.createElement('button');
+        btn.addEventListener('click', (event) => {
+          if (event.srcElement.innerText !== '') {
+            return;
+          }
+          counter % 2 === 0
+            ? (event.srcElement.innerText = 'o')
+            : (event.srcElement.innerText = 'x');
+          counter++;
+        });
+        main.appendChild(btn);
+      }
+    </script>
+  </body>
+</html>
