@@ -1,0 +1,5 @@
+.two-column-grid {
+  display: column;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
