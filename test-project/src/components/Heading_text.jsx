@@ -1,5 +1,3 @@
-import PropTypes from 'prop-types';
-
 import './Heading_text.css';
 const Heading_text = ({ headline, text }) => {
   const style = {
@@ -12,10 +10,6 @@ const Heading_text = ({ headline, text }) => {
       <p style={style}>{text}</p>
     </div>
   );
-};
-Heading_text.propTypes = {
-  headline: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired,
 };
 
 export default Heading_text;

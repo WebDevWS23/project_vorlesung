@@ -22,7 +22,7 @@ function App() {
   };
   //Funktion zum manipulieren von Daten in der ParentComponent können als props ans Child übermittelt werden
   const increaseClickValue = () => {
-    setValue(value + 1);
+    setValue((prevValue) => prevValue + 1);
   };
   const changeVisibility = () => {
     setDisplayComponent(!displayComponent);
@@ -36,6 +36,7 @@ function App() {
   if (!loadingState) {
     component = (
       <>
+        {value}
         {displayComponent ? (
           <TwoColumnGrid>
             {Object.values(serverObj2).map((obj, index) => {
