@@ -3,6 +3,9 @@ import './App.css';
 import Heading_Text_Button from './components/Heading_Text_Button';
 import TwoColumnGrid from './components/Two_Column_Grid';
 import Heading_text from './components/heading_text';
+import { Route, Routes, Link } from 'react-router-dom';
+import Page1 from './pages/page1';
+import Page2 from './pages/page2';
 
 function App() {
   const [value, setValue] = useState(1);
@@ -88,7 +91,20 @@ function App() {
       </>
     );
   }
-  return <>{component}</>;
+  return (
+    <>
+      <Link to='/'>Page 1</Link>
+      <Link to='/page2'>Page 2</Link>
+
+      <Routes>
+        <Route path='/' element={<Page1 />} />
+        <Route path='/page2' element={<Page2 />}>
+          <Route path=':id' element={<Page1 />} />
+        </Route>
+        <Route path='*' element={<Page2 />} />
+      </Routes>
+    </>
+  );
 }
 
 export default App;
